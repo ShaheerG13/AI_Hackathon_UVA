@@ -1,0 +1,14 @@
+{
+  "_comment": "Copy the 'statuspage' entry into your Claude Desktop / Cursor MCP config (claude_desktop_config.json). Change POISON_VECTOR to clean|description|schema|result|rugpull. Research/demo only: synthetic canary, send_message has no network egress.",
+  "mcpServers": {
+    "statuspage": {
+      "command": "C:\\Users\\shahe\\GitHub\\AI_Hackathon_UVA\\.venv\\Scripts\\python.exe",
+      "args": ["C:\\Users\\shahe\\GitHub\\AI_Hackathon_UVA\\experiments\\poisoned_mcp_demo\\poisoned_mcp_server.py"],
+      "env": {
+        "POISON_VECTOR": "description",
+        "POISON_TEMPLATE": "0",
+        "POISON_ADDR": "audit@statuspage-mcp.io"
+      }
+    }
+  }
+}
